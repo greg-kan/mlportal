@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Question answering (extractive)</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Question answering (extractive)</h1>
+    <p>Вопросно - ответная система извлекает ответ на вопрос из заданного текста. Может использоваться для поиска ответа в документе.</p>
+    <br>
+    <form method="post">
+        <textarea class="form-control" rows="10" name="context" id="context" placeholder="Поместите сюда контекст">{{ data.context }}</textarea><br>
+        <!--textarea class="form-control" rows="3"></textarea-->
+        <input type="text" class="form-control" name="question" id="question" placeholder="Введите вопрос" value={{ data.question }}><br>
+        <button class="btn btn-success" type="submit">Получить ответ</button><br>
+    </form>
+    <hr>
+    <input type="text" class="form-control" name="answer" id="answer" placeholder="Здесь будет ответ" readonly value={{ data.answer }}>
+    <hr>
+</div>
+{% endblock %}

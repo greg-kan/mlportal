@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Главная</title>
+{% endblock %}
+
+{% block body %}
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-5">NLP ML PORTAL</h1>
+      <p>Демонстрация работы моделей машинного обучения, применительно к задачам NLP.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Question answering (extractive)</h2>
+        <p>Вопросно - ответная система извлекает ответ на вопрос из заданного текста на русском языке. Может использоваться для поиска ответа в документе.</p>
+        <p><a class="btn btn-secondary" href="/question_answering_extractive" role="button">Попробовать &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Кластеризация текстов</h2>
+        <p>Разбивает входные тексты на категории по смыслу и озаглавливает их.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Попробовать &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Задача NLP</h2>
+        <p>Здесь будет следующая модель.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Попробовать &raquo;</a></p>
+      </div>
+    </div>
+    <br>
+    <!--div class="row">
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+    </div-->
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+{% endblock %}
